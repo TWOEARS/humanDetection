@@ -1,0 +1,5 @@
+/home/ariel/opencv/opencv/data/lbpcascades/lbpcascade_frontalface.xml
+/home/ariel/opencv/opencv/data/lbpcascades/lbpcascade_profileface.xml
+/home/ariel/opencv/opencv/data/haarcascades/haarcascade_upperbody.xml
+/home/ariel/opencv/opencv/data/haarcascades/haarcascade_fullbody.xml
+/home/ariel/opencv/opencv/data/haarcascades/haarcascade_lowerbody.xml
