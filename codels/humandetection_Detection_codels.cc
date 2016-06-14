@@ -61,8 +61,8 @@ void detect(Mat frame, std::vector<Rect> &faces)
  * Throws humandetection_error_videoCap.
  */
 genom_event
-InitRunDetection(humandetection_ids *ids, const char *outputPath,
-                 uint32_t frameHistory, const char *classifiers,
+InitRunDetection(humandetection_ids *ids, uint32_t frameHistory,
+                 const char *classifiers,
                  const humandetection_LeftCameraParameters *LeftCameraParameters,
                  const humandetection_RightCameraParameters *RightCameraParameters,
                  const humandetection_Humans *Humans,

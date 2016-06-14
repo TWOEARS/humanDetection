@@ -81,7 +81,6 @@ component humandetection{
     };
 
     activity RunDetection(
-        in string outputPath = "/tmp/humanDetection/",
         in unsigned long frameHistory = 10 : "Number of frames to publish on the port.",
         in string classifiers = "classifiers.txt",
         in float templateMatchingThreshold,
@@ -89,7 +88,6 @@ component humandetection{
     {       
 
         codel <start>   InitRunDetection(inout ::ids,
-                                        local in outputPath,
                                         local in frameHistory,
                                         local in classifiers,
                                         port in LeftCameraParameters,
@@ -127,6 +125,6 @@ To compile: genom3 skeleton -l c++ -i humandetection.gen
 ::humandetection::connect_port RightCameraParameters /stereo/right/camera_info
 
 
-::humandetection::RunDetection {outputPath /tmp/humanDetection/ frameHistory 3 classifiers /home/ariel/Documents/LAAS/twoears/repositories/humandetection/classifiers.txt templateMatchingThreshold 0.75 disparityThreshold 10}
+::humandetection::RunDetection {frameHistory 3 classifiers /home/ariel/Documents/LAAS/twoears/repositories/humandetection/classifiers.txt templateMatchingThreshold 0.75 disparityThreshold 10}
 
 */
